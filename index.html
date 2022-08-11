@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Página inicial | efundo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<input type="number" id="number_cotas" style="padding: 10px 8px;" placeholder="Total de cotas">
+		<input type="text" id="valor_cota" style="padding: 10px 8px;" placeholder="Valor por cota">
+		<input type="text" id="valor_dividendo" style="padding: 10px 8px;" placeholder="Valor do dividendo">
+		<input type="text" id="valor_renda_passiva" style="padding: 10px 8px;" placeholder="Valor da renda passiva">
+		<button onClick="calcular()" style="padding: 12px 10px;border: none; color: white; background: #00334499">
+			Calcular
+		</button>
+	</header>
+
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Magic number</th>
+					<th>Projeção para renda passiva</th>
+					<th>Valor em caixa para renda passiva</th>
+					<th>Tempo para adquirir</th>
+				</tr>
+			</thead>
+
+			<tbody>
+			    <tr>
+			     	<td id="magic_number"></td>
+			      	<td id="meses_renda_passiva"></td>
+			      	<td id="valor_final"></td>
+			      	<td id="tempo_adquirir"></td>
+			    </tr>
+			</tbody>
+		</table>
+	</main>
+
+
+</body>
+</html>
+<script type="text/javascript" src="main.js"></script>
